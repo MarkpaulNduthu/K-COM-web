@@ -149,7 +149,3 @@ These endpoints are used for handling media files (e.g., images, videos).
 
        ## Contributing
  Contributions are welcome! Please open an issue or submit a pull request.
-
-
-Feel free to modify any sections to better fit your project specifics! Let me know if you need any further assistance.
-
