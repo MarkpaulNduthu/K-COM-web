@@ -130,22 +130,26 @@ These endpoints are used for handling media files (e.g., images, videos).
    git clone https://github.com/MarkpaulNduthu/K-COM-web.git
 
 2. Navigate to the backend directory and install dependencies:
+     ```bash
      cd ecommerce-project/backend
      mvn install
 3. Navigate to the frontend directory and install dependencies:
-     cd ../frontend
+   ```bash
+    cd ../frontend
      npm install
 
    
 ## Running the Application
 
 1. Start the backend server:
+   ```bash
    cd ecommerce-project/backend
    mvn spring-boot:run
    
-2. Start the frontend application:
+3. Start the frontend application:
+   ```bash
    cd ecommerce-project/frontend
    npm start
 
-       ## Contributing
+  ```
  Contributions are welcome! Please open an issue or submit a pull request.
