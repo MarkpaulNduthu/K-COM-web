@@ -13,6 +13,7 @@ This project is an eCommerce application built with **React** for the frontend a
   - Media Files: Supabase
 
 ## Project Structure
+```
 /ecommerce-project
 ├── /frontend          # React application
 │   ├── /src
@@ -22,6 +23,7 @@ This project is an eCommerce application built with **React** for the frontend a
 ├── /src
 ├── pom.xml
 └── ...
+```
 
 
 ## API Endpoints
