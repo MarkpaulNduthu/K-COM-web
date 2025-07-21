@@ -121,7 +121,7 @@ These endpoints are used for handling media files (e.g., images, videos).
 
 - Java 11 or higher
 - Node.js
-- [Database Type] installed and running
+- Required Database installed and running
 
 ### Installation
 
