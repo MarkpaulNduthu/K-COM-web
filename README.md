@@ -151,5 +151,5 @@ These endpoints are used for handling media files (e.g., images, videos).
    cd ecommerce-project/frontend
    npm start
 
-  ```
+
  Contributions are welcome! Please open an issue or submit a pull request.
