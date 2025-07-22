@@ -5,6 +5,35 @@
   text-align: center;
 }
 
+
+ /* Light theme tokens */
+   .light {
+     --background: 255 255 255;           /* rgb */
+     --foreground: 15 23 42;              /* slate-900 */
+     --card: 255 255 255;
+     --card-foreground: 15 23 42;
+     --primary: 37 99 235;                /* brand blue */
+     --primary-foreground: 255 255 255;
+     --secondary: 71 85 105;              /* slatebrand */
+     --secondary-foreground: 255 255 255;
+   }
+
+   /* Dark theme tokens */
+   .dark {
+     --background: 2 6 23;                /* slate-950 */
+     --foreground: 241 245 249;           /* slate-100 */
+     --card: 15 23 42;                    /* slate-900 */
+     --card-foreground: 241 245 249;
+     --primary: 59 130 246;               /* blue-500 */
+     --primary-foreground: 255 255 255;
+     --secondary: 100 116 139;            /* slate-500 */
+     --secondary-foreground: 255 255 255;
+   }
+
+   body {
+     @apply bg-[rgb(var(--background))] text-[rgb(var(--foreground))];
+   }
+
 .logo {
   height: 6em;
   padding: 1.5em;
