@@ -1,8 +1,9 @@
 
 //import { Avatar } from '@radix-ui/react-avatar'
-import { useTheme } from 'next-themes'
+//import { useTheme } from 'next-themes'
+import {  } from './context/ThemeContext'
 import './App.css'
-import { useEffect } from 'react'
+//import { useEffect } from 'react'
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from './components/ui/carousel'
 import { Card, CardContent, CardHeader, CardTitle } from './components/ui/card'
 import { Badge } from './components/ui/badge'
@@ -12,16 +13,6 @@ import { Navbar } from './components/Navbar'
 import { Footer } from './components/Footer'
 
 function App() {
-  const { setTheme } = useTheme()
-
-  // Detect system theme
-  useEffect(() => {
-    if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
-      setTheme("dark")
-    } else {
-      setTheme("light")
-    }
-  }, [setTheme])
 
   //mock data
   const categories = [
@@ -113,7 +104,7 @@ function App() {
                       </CardHeader>
                       <CardContent>
                         <CardTitle className="text-lg">{product.name}</CardTitle>
-                        <p className="text-sm text-gray-500 mb-2">{product.description}</p>
+                        <p className="text-sm  mb-2">{product.description}</p>
                         <p className="font-semibold">{product.price}</p>
                         <div className="flex items-center gap-1 mb-2">
                           {Array.from({ length: 5 }, (_, starIdx) => (
