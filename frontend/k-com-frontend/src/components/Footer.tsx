@@ -36,9 +36,9 @@ export function Footer() {
                 </div>
 
                 {/* Social Media */}
-                <div>
+                <div className="w-full">
                     <h3 className="font-semibold mb-2">Follow Us</h3>
-                    <div className="flex space-x-4">
+                    <div className="flex space-x-4 justify-center">
                         <a href="#" aria-label="Facebook" className="hover:opacity-80">
                             <FiFacebook className="h-5 w-5 text-[#1877F2]" />
                         </a>
