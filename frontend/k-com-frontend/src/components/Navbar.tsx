@@ -8,6 +8,7 @@ import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
 import { Separator } from "@/components/ui/separator"
 import { ThemeToggle } from "./ThemeToggle"
 import { ShoppingCart, Menu } from "lucide-react"
+import { Link } from "react-router-dom"
 
 export function Navbar() {
     return (
@@ -47,12 +48,15 @@ export function Navbar() {
 
 
                     {/* Cart */}
-                    <Button variant="outline" size="icon" className="relative">
-                        <ShoppingCart className="h-5 w-5" />
-                        <Badge className="absolute -top-2 -right-2 bg-blue-600 text-white">
-                            2
-                        </Badge>
-                    </Button>
+                    <Link to="/cart">
+                        <Button variant="outline" size="icon" className="relative">
+                            <ShoppingCart className="h-5 w-5" />
+                            <Badge className="absolute -top-2 -right-2 bg-blue-600 text-white">
+                                2
+                            </Badge>
+                        </Button>
+                    </Link>
+
 
                     {/* Theme Toggle */}
                     <ThemeToggle />
@@ -106,12 +110,15 @@ export function Navbar() {
 
                                 {/* Move Cart and ThemeToggle inside Sheet */}
                                 <div className="flex items-center gap-4">
-                                    <Button variant="outline" size="icon" className="relative">
-                                        <ShoppingCart className="h-5 w-5" />
-                                        <Badge className="absolute -top-2 -right-2 bg-blue-600 text-white">
-                                            2
-                                        </Badge>
-                                    </Button>
+                                    <Link to="/cart">
+                                        <Button variant="outline" size="icon" className="relative">
+                                            <ShoppingCart className="h-5 w-5" />
+                                            <Badge className="absolute -top-2 -right-2 bg-blue-600 text-white">
+                                                2
+                                            </Badge>
+                                        </Button>
+                                    </Link>
+
                                     <ThemeToggle />
                                 </div>
                             </div>
