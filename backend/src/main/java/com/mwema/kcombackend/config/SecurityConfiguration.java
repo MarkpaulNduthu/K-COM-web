@@ -19,12 +19,12 @@ public class SecurityConfiguration {
 
     @Bean
     public SecurityFilterChain webSecConfig(HttpSecurity httpSecurity) throws Exception {
-        return httpSecurity.csrf(AbstractHttpConfigurer::disable)
+        return httpSecurity
+                .csrf(AbstractHttpConfigurer::disable)
                 .authorizeHttpRequests(request -> request.anyRequest().authenticated())
                 .httpBasic(httpSecurityHttpBasicConfigurer -> Customizer.withDefaults())
                 .sessionManagement(httpSecuritySessionManagementConfigurer -> httpSecuritySessionManagementConfigurer.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
-                .oauth2ResourceServer
-                        (OAuth2ResourceServerConfigurer::jwt)
+                .oauth2ResourceServer(OAuth2ResourceServerConfigurer::jwt)
                 .build();
     }
 }
