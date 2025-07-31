@@ -1,4 +1,4 @@
-import {  } from '../context/ThemeContext'
+import { } from '../context/ThemeContext'
 import '../App.css'
 //import { useEffect } from 'react'
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '../components/ui/carousel'
@@ -55,7 +55,7 @@ function App() {
 
   return (
     <>
-    <Navbar/>
+      <Navbar />
       <main className="min-h-screen bg-background text-foreground">
         <div className="min-h-screen bg-background text-foreground">
           {/* Carousel */}
@@ -128,7 +128,7 @@ function App() {
           </section>
         </div>
       </main>
-      <Footer/>
+      <Footer />
     </>
   )
 }
