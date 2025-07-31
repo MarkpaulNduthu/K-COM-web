@@ -9,6 +9,7 @@ import ShoppingCart from './pages/ShoppingCart.tsx'
 import Contact from './pages/Contact.tsx'
 import AboutUs from './pages/AboutUs.tsx'
 import Faq from './pages/Faq.tsx'
+import SearchResults from './pages/SearchResults.tsx'
 
 const PUBLISHABLE_KEY = import.meta.env.VITE_CLERK_PUBLISHABLE_KEY
 
@@ -23,6 +24,7 @@ createRoot(document.getElementById('root')!).render(
         <ClerkProvider publishableKey={PUBLISHABLE_KEY}>
           <Routes>
             <Route path='/' element={<App />} />
+            <Route path='/search' element={<SearchResults />} />
             <Route path='/cart' element={<ShoppingCart />} />
             <Route path='/contact' element={<Contact />} />
             <Route path='/aboutUs' element={<AboutUs />} />
