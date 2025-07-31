@@ -6,7 +6,7 @@ This project is an eCommerce application built with **React** for the frontend a
 
 ## Technologies Used
 
-- **Frontend**: React
+- **Frontend**: React, ShadCN UI and TailwindCSS
 - **Backend**: Spring Boot
 - **Databases**: 
   - Textual Data: MySQL
