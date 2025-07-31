@@ -16,9 +16,7 @@ export function Navbar() {
             <div className="max-w-screen-xl mx-auto flex items-center justify-between gap-4 px-4 py-2">
                 {/* Logo */}
                 <nav className="shrink-0">
-                    <a href="/" className="text-sm font-bold hover:text-blue-600 transition-colors whitespace-nowrap">
-                        K-COM
-                    </a>
+                    <Link to="/">K-COM</Link>
                 </nav>
 
                 <Input

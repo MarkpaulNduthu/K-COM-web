@@ -1,5 +1,6 @@
 import { FiFacebook, FiInstagram, FiTwitter, FiLinkedin } from "react-icons/fi"
 import { Separator } from "@/components/ui/separator"
+import { Link } from "react-router-dom"
 
 export function Footer() {
     return (
@@ -9,7 +10,7 @@ export function Footer() {
                 <div>
                     <h2 className="text-2xl font-bold text-black-700 mb-2">K-COM</h2>
                     <p className="text-sm text-muted-foreground">
-                        Your one-stop shop for electronics, fashion, and more. We bring quality products to your doorstep.
+                        Your one-stop shop for electronics, fashion and more. We bring quality products to your doorstep.
                     </p>
                 </div>
 
@@ -17,10 +18,10 @@ export function Footer() {
                 <div>
                     <h3 className="font-semibold mb-2">Quick Links</h3>
                     <ul className="space-y-1 text-sm text-muted-foreground">
-                        <li><a href="#" className="hover:text-blue-600">Shop</a></li>
-                        <li><a href="#" className="hover:text-blue-600">About Us</a></li>
-                        <li><a href="#" className="hover:text-blue-600">Contact</a></li>
-                        <li><a href="#" className="hover:text-blue-600">FAQ</a></li>
+                        <li><Link to='/' className="hover:text-blue-600">Shop</Link></li>
+                        <li><Link to='/aboutUs' className="hover:text-blue-600">About Us</Link></li>
+                        <li><Link to="/contact" className="hover:text-blue-600">Contact Us</Link></li>
+                        <li><Link to='/faqs' className="hover:text-blue-600">FAQs</Link></li>
                     </ul>
                 </div>
 
