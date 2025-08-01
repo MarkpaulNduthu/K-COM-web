@@ -7,6 +7,10 @@ import NotFound from './pages/NotFound';
 import AboutUs from './pages/AboutUs';
 import Faq from './pages/Faq';
 import SearchResults from './pages/SearchResults';
+import Shipping from './pages/Shipping';
+import Returns from './pages/Returns';
+import PrivacyPolicy from './pages/PrivacyPolicy';
+import TermsAndConditions from './pages/TermsAndConditions';
 
 function App() {
   return (
@@ -18,6 +22,10 @@ function App() {
       <Route path="/aboutUs" element={<AboutUs />} />
       <Route path='/faqs' element={<Faq />} />
       <Route path='/search' element={<SearchResults />} />
+      <Route path='/shipping' element={<Shipping />} />
+      <Route path='/returns' element={<Returns />} />
+      <Route path='/privacy-policy' element={<PrivacyPolicy />} />
+      <Route path='/terms-and-conditions' element={<TermsAndConditions />} />
     </Routes>
   );
 }

@@ -10,6 +10,11 @@ import Contact from './pages/Contact.tsx'
 import AboutUs from './pages/AboutUs.tsx'
 import Faq from './pages/Faq.tsx'
 import SearchResults from './pages/SearchResults.tsx'
+import Shipping from './pages/Shipping.tsx'
+import Returns from './pages/Returns.tsx'
+import NotFound from './pages/NotFound.tsx'
+import PrivacyPolicy from './pages/PrivacyPolicy.tsx'
+import TermsAndConditions from './pages/TermsAndConditions.tsx'
 
 const PUBLISHABLE_KEY = import.meta.env.VITE_CLERK_PUBLISHABLE_KEY
 
@@ -29,6 +34,11 @@ createRoot(document.getElementById('root')!).render(
             <Route path='/contact' element={<Contact />} />
             <Route path='/aboutUs' element={<AboutUs />} />
             <Route path='/faqs' element={<Faq />} />
+            <Route path='/shipping' element={<Shipping />} />
+            <Route path='/returns' element={<Returns />} />
+            <Route path='/privacy-policy' element={<PrivacyPolicy />} />
+            <Route path='/terms-and-conditions' element={<TermsAndConditions />} />
+            <Route path='/404' element={<NotFound />} />
           </Routes>
         </ClerkProvider>
       </ThemeProvider>
