@@ -29,10 +29,10 @@ export function Footer() {
                 <div>
                     <h3 className="font-semibold mb-2">Customer Support</h3>
                     <ul className="space-y-1 text-sm text-muted-foreground">
-                        <li><a href="#" className="hover:text-blue-600">Shipping & Delivery</a></li>
-                        <li><a href="#" className="hover:text-blue-600">Returns & Refunds</a></li>
-                        <li><a href="#" className="hover:text-blue-600">Privacy Policy</a></li>
-                        <li><a href="#" className="hover:text-blue-600">Terms & Conditions</a></li>
+                        <li><Link to="/shipping" className="hover:text-blue-600">Shipping & Delivery</Link></li>
+                        <li><Link to="/returns" className="hover:text-blue-600">Returns & Refunds</Link></li>
+                        <li><Link to="/privacy-policy" className="hover:text-blue-600">Privacy Policy</Link></li>
+                        <li><Link to="/terms-and-conditions" className="hover:text-blue-600">Terms & Conditions</Link></li>
                     </ul>
                 </div>
 
