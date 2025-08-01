@@ -8,8 +8,24 @@ import { Star } from 'lucide-react'
 import { Button } from '../components/ui/button'
 import { Navbar } from '../components/Navbar'
 import { Footer } from '../components/Footer'
+import { useState } from 'react'
+import { ProductModal } from '@/components/ProductModal'
+import { type Product } from '@/types/Product'
 
 function App() {
+
+  const [selectedProduct, setSelectedProduct] = useState<Product | null>(null);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const handleProductClick = (product: Product) => {
+    setSelectedProduct(product);
+    setIsModalOpen(true);
+  };
+
+  const handleCloseModal = () => {
+    setIsModalOpen(false);
+    setSelectedProduct(null);
+  };
 
   //mock data
   const categories = [
@@ -91,7 +107,9 @@ function App() {
                 <h2 className="text-xl font-semibold mb-4">{category.name}</h2>
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
                   {products.map((product, idx) => (
-                    <Card key={idx} className="border shadow-md hover:shadow-lg transition">
+                    <Card key={idx}
+                      onClick={() => handleProductClick(product)}
+                      className="border shadow-md hover:shadow-lg transition">
                       <CardHeader>
                         <img
                           src={product.img}
@@ -127,6 +145,12 @@ function App() {
             ))}
           </section>
         </div>
+        {/* Product Modal */}
+        <ProductModal
+          product={selectedProduct}
+          isOpen={isModalOpen}
+          onClose={handleCloseModal}
+        />
       </main>
       <Footer />
     </>
