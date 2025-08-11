@@ -1,0 +1,13 @@
+https://on-reindeer-54.clerk.accounts.dev/.well-known/jwks.json - JWKS endpoint
+https://on-reindeer-54.clerk.accounts.dev - issuer
+Supabase-template
+supabase-kcom - name
+7463-signing key
+
+{
+  "app_metadata": {},
+  "aud": "authenticated",
+  "email": "{{user.primary_email_address}}",
+  "role": "authenticated",
+  "user_metadata": {}
+}

@@ -1,0 +1,71 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+
+ /* Light theme tokens */
+   .light {
+     --background: 255 255 255;           /* rgb */
+     --foreground: 15 23 42;              /* slate-900 */
+     --card: 255 255 255;
+     --card-foreground: 15 23 42;
+     --primary: 37 99 235;                /* brand blue */
+     --primary-foreground: 255 255 255;
+     --secondary: 71 85 105;              /* slatebrand */
+     --secondary-foreground: 255 255 255;
+   }
+
+   /* Dark theme tokens */
+   .dark {
+     --background: 2 6 23;                /* slate-950 */
+     --foreground: 241 245 249;           /* slate-100 */
+     --card: 15 23 42;                    /* slate-900 */
+     --card-foreground: 241 245 249;
+     --primary: 59 130 246;               /* blue-500 */
+     --primary-foreground: 255 255 255;
+     --secondary: 100 116 139;            /* slate-500 */
+     --secondary-foreground: 255 255 255;
+   }
+
+   body {
+     @apply bg-[rgb(var(--background))] text-[rgb(var(--foreground))];
+   }
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
